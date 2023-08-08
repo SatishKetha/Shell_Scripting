@@ -30,4 +30,4 @@ chmod 666 /var/run/docker.sock
 
 docker version
 
-echo e "$G Docker Installed Succesfully.. $N" 
+echo -e "$G Docker Installed Succesfully.. $N" 
