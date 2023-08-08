@@ -9,6 +9,7 @@ trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 USERID=$(id -u)
 R="\e[31m"
+G="\e[32m"
 N="\e[0m"
 
 if [$USERID -ne 0]
@@ -28,3 +29,5 @@ usermod -a -G docker ec2-user
 chmod 666 /var/run/docker.sock
 
 docker version
+
+echo e "$G Docker Installed Succesfully.. $N" 
